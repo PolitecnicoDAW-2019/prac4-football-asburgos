@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Football Players List</title>
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="players-container" id="divPlayers"></div>
+    <div class="tools" id="divTools">
+      <label for="inputName">Nombre: <input type="text" id="inputName"/></label>
+      <label for="inputAlias"
+        >Alias: <input type="text" id="inputAlias"
+      /></label>
+      <label for="inputAge">Edad: <input type="text" id="inputAge"/></label>
+      <label for="inputRole"
+        >Posicion: <input type="text" id="inputRole"
+      /></label>
+      <label for="inputClub">Club: <input type="text" id="inputClub"/></label>
+      <label for="inputStory"
+        >Historial: <input type="text" id="inputStory"
+      /></label>
+      <button id="buttonCreate">Crear</button>
+      <button id="buttonUpdate">Editar</button>
+      <button id="buttonDelete">Eliminar</button>
+    </div>
+  </body>
+  <script src="../node_modules/moment/moment.js"></script>
+  <script src="constants/constants.js"></script>
+  <script src="models/player.model.js"></script>
+  <script src="services/http.service.js"></script>
+  <script src="services/players.service.js"></script>
+  <script src="views/players.view.js"></script>
+  <script src="controllers/players.controller.js"></script>
+  <script src="app.js"></script>
+</html>
